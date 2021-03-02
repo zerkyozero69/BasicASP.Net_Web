@@ -1,0 +1,26 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loop Page</title>
+</head>
+<body>
+    @for( var i=1;i<10;i++)
+    {
+        <h2>@i</h2>
+    }
+    @{ 
+        var student = new List<string>();
+        student.Add("สมหญิง");
+        student.Add("สมปอง");
+        student.Add("สมหน้า");
+        student.Add("สมชาย");
+    }
+
+    @foreach (var  x in student)
+    {<h3>@x</h3>
+
+    }
+
+</body>
+</html>
